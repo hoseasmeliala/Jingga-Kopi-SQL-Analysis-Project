@@ -1,9 +1,4 @@
-# ☕ Jingga Kopi — SQL Data Analysis
-
-![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-336791?logo=postgresql&logoColor=white)
-![SQL](https://img.shields.io/badge/Language-SQL-4479A1?logo=sql&logoColor=white)
-![Data Analysis](https://img.shields.io/badge/Focus-Data%20Analysis-blue)
-![Status](https://img.shields.io/badge/Project-Completed-success)
+# ☕ Jingga Kopi — SQL Data Analysis Project
 
 An end-to-end **SQL Data Analysis project** using PostgreSQL to analyze sales, customers, products, and city-level business performance for a fictional Indonesian coffee business, **Jingga Kopi**.
 
@@ -20,7 +15,6 @@ The project demonstrates how I approached a business problem as a Data Analyst: 
 - [🔍 Scope of Analysis](#-scope-of-analysis)
 - [🛠 Tools & Techniques](#-tools--techniques)
 - [🔄 Project Workflow](#-project-workflow)
-- [📊 Dashboard Preview](#-dashboard-preview)
 - [📌 Key Findings](#-key-findings)
 - [📈 Business Insights](#-business-insights)
 - [💡 Business Recommendations](#-business-recommendations)
@@ -325,27 +319,6 @@ This ensures that recommendations are evidence-based and traceable to the SQL an
 
 ---
 
-## 📊 Dashboard Preview
-
-This project is intentionally focused on **PostgreSQL and SQL-based analysis**, so a Power BI/Tableau dashboard is not included in the current version.
-
-Instead, the primary analytical output is the SQL analysis and the resulting business insight document.
-
-### SQL Analysis Preview
-
-The project demonstrates analytical outputs such as:
-
-- City revenue ranking
-- Product transaction ranking
-- Average revenue per customer
-- Unique customer counts
-- Revenue-to-rent comparison
-- Month-over-month revenue growth
-- Top 3 products within each city
-
-A dashboard can be added as a future improvement after the SQL analysis has been completed.
-
----
 
 ## 📌 Key Findings
 
@@ -594,7 +567,7 @@ This demonstrates the ability to connect technical SQL skills with business deci
 ## 📁 Repository Structure
 
 ```text
-Jingga-Kopi-SQL-Analysis/
+Jingga-Kopi-SQL-Analysis-Project/
 │
 ├── README.md
 │
@@ -606,6 +579,7 @@ Jingga-Kopi-SQL-Analysis/
 │
 ├── sql/
 │   ├── 01_Database_Schema.sql
+│   ├── 01.1_Table_Mapping.pgerd        
 │   ├── 02_Data_Validation.sql
 │   └── 03_Analysis.sql
 │
@@ -623,6 +597,7 @@ Jingga-Kopi-SQL-Analysis/
 | `products.csv` | Product dataset |
 | `sales.csv` | Transaction dataset |
 | `01_Database_Schema.sql` | Database and table structure |
+| `01.1_Table_Mapping.pgerd` | Table relation preview |
 | `02_Data_Validation.sql` | Data quality and consistency checks |
 | `03_Analysis.sql` | Business questions and SQL analysis |
 | `Business_Insights.md` | Findings, interpretation, and recommendations |
@@ -645,30 +620,7 @@ Build a Power BI or Tableau dashboard containing:
 - Monthly revenue trend
 - City market opportunity
 
-### 2. Profitability Analysis
-
-Add:
-
-- Cost of goods sold
-- Labor cost
-- Utilities
-- Marketing cost
-- Taxes
-- Other operating expenses
-
-This would allow the analysis to move from **revenue efficiency** to actual **profitability analysis**.
-
-### 3. Customer Segmentation
-
-Apply customer segmentation based on:
-
-- Recency
-- Frequency
-- Monetary value
-
-For example, using an RFM framework.
-
-### 4. Customer Satisfaction Analysis
+### 2. Customer Satisfaction Analysis
 
 The dataset contains customer rating information. Future analysis could examine:
 
@@ -676,14 +628,6 @@ The dataset contains customer rating information. Future analysis could examine:
 - Rating by product
 - Relationship between rating and revenue
 - Low-rated products requiring improvement
-
-### 5. Advanced Sales Forecasting
-
-Use historical transaction data to develop:
-
-- Revenue forecasting
-- Demand forecasting
-- Seasonal trend analysis
 
 ---
 
@@ -695,10 +639,9 @@ Aspiring **Data Analyst** with a focus on turning data into actionable business 
 
 ### Core Skills
 
-- SQL / PostgreSQL
 - Microsoft Excel
-- Power BI
-- Python
+- SQL / PostgreSQL
+- Power BI or Tableau (Progress...)
 - Data Cleaning
 - Data Validation
 - Data Visualization

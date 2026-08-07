@@ -1,0 +1,29 @@
+product_id;product_name;price
+1;Espresso;18000
+2;Americano;20000
+3;Kopi Susu;22000
+4;Kopi Susu Gula Aren;24000
+5;Cappuccino;27000
+6;Cafe Latte;27000
+7;Caramel Latte;29000
+8;Hazelnut Latte;30000
+9;Mocha;30000
+10;Vanilla Latte;29000
+11;Cold Brew;25000
+12;Iced Americano;22000
+13;Iced Coffee Latte;25000
+14;Iced Caramel Coffee;28000
+15;Affogato;30000
+16;Matcha Latte;28000
+17;Chocolate Latte;27000
+18;Thai Tea;22000
+19;Lemon Tea;18000
+20;Peach Tea;22000
+21;Coffee Beans 250g;65000
+22;Coffee Beans 500g;110000
+23;Ground Coffee 250g;55000
+24;Cold Brew Bottle;25000
+25;Coffee Drip Bags 10pcs;75000
+26;French Press;175000
+27;Coffee Gift Hamper;250000
+28;Coffee Subscription;200000

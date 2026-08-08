@@ -21,6 +21,8 @@ CSV Data
    ↓
 01_Database_Schema.sql
    ↓
+01.1_Table_Mapping.pgerd
+   ↓
 02_Data_Validation.sql
    ↓
 03_Analysis.sql
@@ -98,15 +100,15 @@ Market size should therefore be evaluated together with actual sales performance
 
 ---
 
-# 5. Q4 2024 Sales Performance by City
+# 5. Quarter 4 2024 Sales Performance by City
 
 **SQL Source: `03_Analysis.sql — Q2`**
 
-Q2 analyzes revenue generated during **Q4 2024** by city.
+Q2 analyzes revenue generated during **Quarter 4 2024** by city.
 
 The highest-performing cities were:
 
-| Rank | City | Q4 2024 Revenue |
+| Rank | City | Quarter 4 2024 Revenue |
 |---:|---|---:|
 | 1 | Bandung | IDR 15.30M |
 | 2 | Surabaya | IDR 11.28M |
@@ -116,7 +118,7 @@ The highest-performing cities were:
 
 ### Key Insight
 
-**Bandung was the strongest revenue contributor during Q4 2024**, generating approximately IDR 15.30 million.
+**Bandung was the strongest revenue contributor during Quarter 4 2024**, generating approximately IDR 15.30 million.
 
 ### Business Implication
 

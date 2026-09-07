@@ -2,7 +2,7 @@
 
 An end-to-end **SQL Data Analysis project** using PostgreSQL to analyze sales, customers, products, and city-level business performance for a fictional Indonesian coffee business, **Jingga Kopi**.
 
-The project demonstrates how I approached a business problem as a Data Analyst: starting from relational database design and data validation, continuing with SQL-based business analysis, and finally translating query results into actionable business insights and recommendations.
+The project demonstrates a complete Data Analyst workflow: starting from relational database design and data validation, continuing with SQL-based business analysis, and finally translating query results into actionable business insights and recommendations.
 
 ---
 
@@ -40,7 +40,7 @@ The project follows an end-to-end analytical workflow:
 
 > **Database Design → Data Import → Data Validation → SQL Analysis → Business Insights → Recommendations**
 
-The analysis focuses on understanding sales performance, product demand, customer value, city-level performance, revenue efficiency, and potential market opportunities.
+The analysis focuses on understanding sales performance, product demand, customer value, city-level performance, revenue efficiency, and potential market opportunities. Market potential is treated as a theoretical estimate based on the assumptions documented in the project.
 
 ### Dataset at a Glance
 
@@ -75,7 +75,7 @@ The key business questions are:
 6. Which cities have the largest coffee-product customer bases?
 7. How does revenue compare with estimated rental costs?
 8. How does revenue change month over month?
-9. Which cities should receive greater attention for future growth?
+9. Which cities demonstrate the strongest overall performance for future consideration?
 10. What actions can the business take based on the analysis?
 
 ---
@@ -180,7 +180,7 @@ The analysis in `03_Analysis.sql` contains **10 business-oriented SQL analyses**
 | Q7 | Unique coffee customers by city | Filtering, `COUNT(DISTINCT)` |
 | Q8 | Revenue vs. estimated rent | CTE, calculation |
 | Q9 | Month-over-month revenue growth | CTE, `LAG()`, window functions |
-| Q10 | City ranking by revenue / market potential | CTE, `DENSE_RANK()` |
+| Q10 | Top cities by overall revenue | CTE, `DENSE_RANK()` |
 
 ---
 
@@ -384,17 +384,19 @@ This represents theoretical market size rather than observed customers.
 
 ---
 
-### 6. Bandung has the strongest revenue-to-rent ratio
+### 6. Bandung has the strongest revenue-to-rent position
 
 **SQL Source:** `03_Analysis.sql — Q8`
 
-Bandung generated approximately:
+Over the same **22-month analysis period (January 2024 – October 2025)**, Bandung recorded:
 
-**3.99x revenue relative to estimated rent**
+**0.18x revenue-to-estimated-rent ratio**
 
 This is the highest ratio among the analyzed cities.
 
-> This ratio is a screening indicator and should not be interpreted as profitability.
+> A ratio of 0.18x means cumulative revenue is 0.18 times the estimated rental cost over the same period. It is a screening indicator, not a profitability measure.
+
+> **Important:** Estimated rent is a dummy assumption and does not include other operating costs such as ingredients, labor, utilities, marketing, taxes, or logistics.
 
 ---
 
@@ -447,10 +449,10 @@ Jakarta has:
 Yogyakarta has:
 
 - Highest unique coffee-product customer count
-- Strong revenue relative to estimated rent
+- Strong revenue-to-estimated-rent position
 - Lower average revenue per customer than Bandung, Surabaya, and Jakarta
 
-**Interpretation:** Yogyakarta may provide an opportunity to increase customer monetization while maintaining relatively attractive cost efficiency.
+**Interpretation:** Yogyakarta combines a relatively large observed customer base with a stronger revenue-to-estimated-rent position, while still having room to improve customer value.
 
 ---
 
@@ -477,11 +479,11 @@ Prioritize customer retention, loyalty initiatives, and product availability in 
 
 ### 2. Evaluate Yogyakarta for Further Expansion
 
-**Evidence:** Q7, Q8
+**Evidence:** Q4, Q7, Q8
 
-Yogyakarta combines a relatively large coffee-product customer base with a strong revenue-to-rent ratio.
+Yogyakarta combines a relatively large observed coffee-product customer base with a strong revenue-to-estimated-rent position, while average revenue per customer remains below the strongest cities.
 
-The city should be considered for further expansion evaluation.
+The city should be considered for further expansion evaluation, with emphasis on increasing customer value.
 
 ---
 
@@ -497,7 +499,7 @@ Jakarta has the largest theoretical coffee market, but its higher estimated rent
 
 **Evidence:** Q4, Q7
 
-Both cities have relatively large customer bases but lower average revenue per customer.
+Both cities have relatively large observed customer bases but lower average revenue per customer than Bandung, Surabaya, and Jakarta.
 
 Potential actions include:
 
@@ -641,7 +643,7 @@ Aspiring **Data Analyst** with a focus on turning data into actionable business 
 
 - Microsoft Excel
 - SQL / PostgreSQL
-- Power BI or Tableau (Progress...)
+- Power BI 
 - Data Cleaning
 - Data Validation
 - Data Visualization

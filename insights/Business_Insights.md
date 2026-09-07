@@ -286,31 +286,43 @@ Focus on increasing customer value through:
 
 **SQL Source: `03_Analysis.sql — Q8`**
 
-Q8 compares average revenue per customer with estimated rent per customer.
+Q8 compares cumulative revenue with estimated rental costs over the same **22-month analysis period (January 2024 – October 2025)**.
 
-The overall city-level revenue-to-rent comparison indicates that:
+The analysis calculates:
 
-| Rank | City | Total Revenue | Estimated Rent | Revenue / Rent |
+- **Total Revenue** — cumulative revenue during the analysis period
+- **Estimated Rent — 22 Months** — estimated monthly rent × 22 months
+- **Revenue-to-Rent Ratio** — cumulative revenue ÷ estimated rental cost over the same period
+
+The revenue-to-rent ratio is used as a **screening indicator**, not as a measure of profitability.
+
+| Rank | City | Total Revenue | Estimated Rent — 22 Months | Revenue / Rent |
 |---:|---|---:|---:|---:|
-| 1 | Bandung | IDR 71.86M | IDR 18.00M | 3.99x |
-| 2 | Yogyakarta | IDR 46.06M | IDR 12.00M | 3.84x |
-| 3 | Medan | IDR 41.15M | IDR 16.00M | 2.57x |
-| 4 | Surabaya | IDR 54.72M | IDR 22.00M | 2.49x |
-| 5 | Jakarta | IDR 49.57M | IDR 35.00M | 1.42x |
+| 1 | Bandung | IDR 71.86M | IDR 396.00M | **0.18x** |
+| 2 | Yogyakarta | IDR 46.06M | IDR 264.00M | **0.17x** |
+| 3 | Medan | IDR 41.15M | IDR 352.00M | **0.12x** |
+| 4 | Surabaya | IDR 54.72M | IDR 484.00M | **0.11x** |
+| 5 | Jakarta | IDR 49.57M | IDR 770.00M | **0.06x** |
 
 ### Key Insight
 
-**Bandung has the highest revenue-to-estimated-rent ratio**, followed by Yogyakarta.
+**Bandung has the highest revenue-to-estimated-rent ratio at 0.18x**, followed by Yogyakarta at 0.17x and Medan at 0.12x.
+
+Although Jakarta generates substantial cumulative revenue, its higher estimated rental cost results in a lower revenue-to-rent ratio of 0.06x.
 
 ### Business Implication
 
-These cities appear attractive when comparing observed revenue against the estimated rental cost included in the dataset.
+Bandung and Yogyakarta demonstrate relatively stronger cumulative revenue performance compared with their estimated rental costs over the analysis period.
+
+Jakarta shows strong absolute revenue but requires greater rental expenditure, indicating that high revenue alone does not necessarily translate into a stronger revenue-to-rent position.
 
 ### Recommendation
 
-Use Bandung and Yogyakarta as priority cities for **further expansion evaluation**.
+Use **Bandung and Yogyakarta as priority cities for further expansion evaluation**, while maintaining a more cautious approach toward high-rent locations such as Jakarta.
 
-However, this should not be treated as a profitability conclusion because the dataset does not include all operating costs.
+However, this ratio should **not be interpreted as profitability**, because the analysis does not include other operating costs such as cost of goods sold, employee salaries, utilities, marketing, taxes, and other business expenses.
+
+The estimated rent is also an assumed monthly cost and should therefore be treated as a **screening indicator rather than an actual financial performance measure**.
 
 ---
 

@@ -67,16 +67,16 @@ Jingga Kopi has transaction data across multiple Indonesian cities but needs a s
 
 The key business questions are:
 
-1. Which cities generate the highest revenue?
-2. Which products have the highest transaction volume?
-3. How much revenue is generated per customer?
-4. Which cities have the largest potential coffee-consumer markets?
-5. Which products perform best within each city?
-6. Which cities have the largest coffee-product customer bases?
-7. How does revenue compare with estimated rental costs?
-8. How does revenue change month over month?
-9. Which cities demonstrate the strongest overall performance for future consideration?
-10. What actions can the business take based on the analysis?
+1. Which cities have the largest estimated coffee-consumer markets?
+2. Which cities generated the highest revenue during Q4 2024?
+3. Which products have the highest transaction volume?
+4. Which cities generate the highest average revenue per customer?
+5. How does population compare with estimated coffee-consumer potential?
+6. Which products perform best within each city?
+7. Which cities have the largest coffee-product customer bases?
+8. How does revenue compare with estimated rental costs?
+9. How does monthly revenue change from one month to the next?
+10. Which cities rank highest by overall revenue?
 
 ---
 
@@ -92,7 +92,7 @@ Specifically, this project aims to:
 - Measure customer value by city.
 - Compare market potential across Indonesian cities.
 - Identify city-level product preferences.
-- Analyze month-over-month revenue growth.
+- Analyze month-over-month revenue changes.
 - Compare revenue with estimated rental costs.
 - Translate SQL results into business recommendations.
 
@@ -406,7 +406,22 @@ This is the highest ratio among the analyzed cities.
 
 Multiple cities recorded significant month-over-month revenue increases in September 2024.
 
-This pattern should be investigated before being interpreted as sustainable organic growth.
+Examples:
+
+| City | Previous Revenue | Current Revenue | Growth |
+|---|---:|---:|---:|
+| Semarang | IDR 225K | IDR 2.15M | +855.6% |
+| Yogyakarta | IDR 1.32M | IDR 9.33M | +606.9% |
+| Medan | IDR 1.39M | IDR 9.63M | +592.7% |
+| Palembang | IDR 1.20M | IDR 8.05M | +573.3% |
+| Surabaya | IDR 1.64M | IDR 11.00M | +570.0% |
+| Bandung | IDR 2.41M | IDR 15.30M | +536.2% |
+
+The unusually high percentages should **not automatically be interpreted as sustainable business growth**.
+
+For example, Semarang's **+855.6%** increase is partly driven by its relatively low previous-month revenue baseline.
+
+Because multiple cities experienced substantial increases during the same period, **September 2024 should be treated as a revenue spike or potential anomaly requiring further investigation**.
 
 ---
 
@@ -585,8 +600,18 @@ Jingga-Kopi-SQL-Analysis-Project/
 │   ├── 02_Data_Validation.sql
 │   └── 03_Analysis.sql
 │
-└── insights/
-    └── Business_Insights.md
+├── insights/
+│   └── Business_Insights.md
+│
+│
+└── visuals/
+    ├── data_model.png
+    ├── q3_product_performance.png
+    ├── q6_top_products_by_city.png
+    ├── q8_revenue_vs_rent.png
+    ├── q9_monthly_revenue_growth.png
+    └── q10_city_revenue_ranking.png
+
 ```
 
 ### File Description

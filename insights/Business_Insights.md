@@ -66,7 +66,7 @@ At the product level, **Americano, Espresso, and Kopi Susu** recorded the highes
 
 Customer analysis shows that **Yogyakarta and Medan** have the largest numbers of unique customers purchasing the defined coffee-product segment. However, **Bandung, Surabaya, and Jakarta** generate substantially higher average revenue per customer.
 
-When revenue is compared with estimated rent, **Bandung has the strongest revenue-to-rent ratio** among the analyzed cities. This makes it an attractive city for further evaluation, although the ratio should not be interpreted as profitability.
+When cumulative revenue is compared with estimated rental costs over the same **22-month period**, **Bandung has the strongest revenue-to-rent ratio at 0.18x** among the analyzed cities. This ratio is a relative screening indicator and should not be interpreted as profitability.
 
 ---
 
@@ -264,11 +264,11 @@ The cities with the highest unique-customer counts were:
 
 **Yogyakarta and Medan have the largest observed customer bases for the defined coffee-product segment.**
 
-However, these cities have lower average revenue per customer than Bandung, Surabaya, and Jakarta.
+However, their average revenue per customer is lower than in Bandung, Surabaya, and Jakarta. This suggests that a larger customer base does not necessarily translate into higher customer value.
 
 ### Business Implication
 
-There is an opportunity to increase revenue without relying entirely on acquiring new customers.
+The results suggest an opportunity to increase revenue by improving spending and engagement among existing customers, rather than relying entirely on new customer acquisition.
 
 ### Recommendation
 
@@ -295,6 +295,8 @@ The analysis calculates:
 - **Revenue-to-Rent Ratio** — cumulative revenue ÷ estimated rental cost over the same period
 
 The revenue-to-rent ratio is used as a **screening indicator**, not as a measure of profitability.
+
+> **Interpretation note:** A ratio of 0.18x means cumulative revenue is 0.18 times the estimated rental cost over the same 22-month period. It does not mean the business generated 18% profit.
 
 | Rank | City | Total Revenue | Estimated Rent — 22 Months | Revenue / Rent |
 |---:|---|---:|---:|---:|
@@ -442,18 +444,19 @@ From **Q1, Q4, Q8, and Q10**:
 
 ### Yogyakarta
 
-From **Q7 and Q8**:
+From **Q4, Q7, and Q8**:
 
 - Highest number of unique coffee customers
 - Strong revenue-to-rent ratio
+- Lower average revenue per customer than Bandung, Surabaya, and Jakarta
 
-**Interpretation:** Yogyakarta has an attractive combination of customer base and estimated cost efficiency, although average revenue per customer remains below Bandung, Surabaya, and Jakarta.
+**Interpretation:** Yogyakarta combines a relatively large observed customer base with a stronger revenue-to-rent position, while still having room to improve customer value.
 
 ---
 
 ### Medan
 
-From **Q7 and Q4**:
+From **Q4 and Q7**:
 
 - Second-highest unique coffee-customer count
 - Lower average revenue per customer
@@ -476,13 +479,13 @@ Bandung consistently performs strongly across revenue, customer value, and reven
 
 ---
 
-### 2. Evaluate Yogyakarta for Expansion
+### 2. Evaluate Yogyakarta for Further Expansion
 
-**Evidence:** Q7, Q8
+**Evidence:** Q4, Q7, Q8
 
-Yogyakarta has a large unique-customer base and a strong revenue-to-rent ratio.
+Yogyakarta combines a relatively large observed coffee-product customer base with a strong revenue-to-rent position, while average revenue per customer remains below the strongest cities.
 
-**Action:** Evaluate the city as a potential expansion or marketing-investment opportunity.
+**Action:** Evaluate Yogyakarta for further expansion or targeted marketing investment, with emphasis on increasing customer value.
 
 ---
 
@@ -496,13 +499,13 @@ Jakarta has the largest estimated market size and strong revenue per customer, b
 
 ---
 
-### 4. Increase Customer Value in Medan and Yogyakarta
+### 4. Increase Customer Value in Yogyakarta and Medan
 
 **Evidence:** Q4, Q7
 
-Both cities have relatively large customer bases but lower average revenue per customer than the top-performing cities.
+Both cities have relatively large observed customer bases but lower average revenue per customer than Bandung, Surabaya, and Jakarta.
 
-**Action:** Use bundling, upselling, and loyalty programs to increase spending per customer.
+**Action:** Use bundling, upselling, premium-product recommendations, and loyalty programs to increase spending per customer.
 
 ---
 
@@ -532,14 +535,14 @@ This project uses a **dummy dataset**, so the findings demonstrate an analytical
 
 Important limitations:
 
-1. The estimated coffee-consumer market is based on a fixed 25% population assumption.
+1. The estimated coffee-consumer market is based on a fixed 25% population assumption and therefore represents a theoretical addressable-market proxy, not observed customers.
 2. Estimated rent is a dummy assumption and does not represent verified Indonesian commercial rental prices.
-3. Revenue-to-rent ratio is not a profitability metric.
-4. Product IDs 1–14 are classified as coffee products based on the dataset structure.
+3. Revenue-to-rent ratio is a screening indicator and is not a profitability metric because other operating costs are excluded.
+4. Product IDs 1–14 are classified as coffee products based on the current dataset structure; this classification would be more robust if a product category field were used directly.
 5. The analysis does not include operating costs such as ingredients, labor, utilities, marketing, taxes, or logistics.
-6. September 2024 contains an unusually large revenue increase that requires further investigation.
+6. September 2024 contains an unusually large revenue increase that requires further investigation and should not automatically be interpreted as sustainable growth.
 7. October 2025 is an incomplete month in the dataset and should not be directly compared with complete months.
-8. Customer satisfaction/rating data is available in the dataset but is outside the scope of the current `03_Analysis.sql`.
+8. Customer satisfaction/rating data is available in the raw dataset but is outside the scope of the current `03_Analysis.sql`.
 
 ---
 
@@ -567,8 +570,8 @@ The strongest findings are:
 
 - **Bandung is the strongest overall revenue-performing city.**
 - **Americano is the highest-volume product.**
-- **Yogyakarta and Medan have relatively large coffee-product customer bases.**
-- **Bandung has the strongest revenue-to-estimated-rent ratio.**
+- **Yogyakarta and Medan have relatively large observed customer bases for the defined coffee-product segment.**
+- **Bandung has the strongest revenue-to-estimated-rent position over the 22-month analysis period.**
 - **Jakarta has the largest estimated coffee-consumer market but also higher estimated rent.**
 - **September 2024 shows an unusual revenue spike that should be investigated before being interpreted as sustainable growth.**
 

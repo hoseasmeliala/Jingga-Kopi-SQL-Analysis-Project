@@ -325,7 +325,6 @@ However, this ratio should **not be interpreted as profitability**, because the 
 The estimated rent is also an assumed monthly cost and should therefore be treated as a **screening indicator rather than an actual financial performance measure**.
 
 ---
-
 # 12. Month-over-Month Revenue Growth
 
 **SQL Source: `03_Analysis.sql — Q9`**
@@ -337,24 +336,32 @@ Q9 uses:
 - `PARTITION BY`
 - Year/month ordering
 
-to calculate monthly revenue and month-over-month revenue growth by city.
+to calculate **current monthly revenue, previous monthly revenue, and month-over-month revenue growth by city**.
 
 ### Key Insight
 
 The analysis identifies substantial month-over-month fluctuations, including a major revenue increase in **September 2024** across multiple cities.
 
-Several cities experienced very large increases during this period, including:
+Several cities experienced very large percentage increases during this period:
 
-- Semarang: approximately +855.6%
-- Yogyakarta: approximately +606.9%
-- Medan: approximately +592.7%
-- Palembang: approximately +573.3%
-- Surabaya: approximately +570.0%
-- Bandung: approximately +536.2%
+| City | Previous Revenue | Current Revenue | Growth |
+|---|---:|---:|---:|
+| Semarang | IDR 225K | IDR 2.15M | **+855.6%** |
+| Yogyakarta | IDR 1.32M | IDR 9.33M | **+606.9%** |
+| Medan | IDR 1.39M | IDR 9.63M | **+592.7%** |
+| Palembang | IDR 1.20M | IDR 8.05M | **+573.3%** |
+| Surabaya | IDR 1.64M | IDR 11.00M | **+570.0%** |
+| Bandung | IDR 2.41M | IDR 15.30M | **+536.2%** |
+
+The percentage increases should be interpreted together with the underlying revenue values. For example, Semarang's **+855.6% growth** is partly driven by its relatively low previous-month revenue baseline.
 
 ### Business Interpretation
 
-Because the increase occurred across multiple cities at approximately the same time, it should be investigated before being interpreted as sustainable organic growth.
+Because the increase occurred across multiple cities at approximately the same time, the September 2024 spike should be investigated before being interpreted as sustainable organic growth.
+
+The unusually high growth percentages may reflect a combination of a low previous-month baseline and a substantial increase in current-month revenue.
+
+Therefore, the analysis identifies the event as a **revenue anomaly or spike requiring further investigation**, rather than automatically classifying it as sustainable business growth.
 
 ### Recommendation
 
@@ -364,6 +371,7 @@ Investigate potential causes such as:
 - Seasonal demand
 - Product launches
 - Bulk transactions
+- Unusual customer activity
 - Data-generation patterns
 
 The business should distinguish between **temporary revenue spikes and sustainable growth** before making long-term decisions.

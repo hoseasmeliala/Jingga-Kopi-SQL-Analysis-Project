@@ -1,6 +1,6 @@
 # Jingga Kopi — Business Insights
 
-## 1. Project Overview
+## Project Overview
 
 **Jingga Kopi** is a fictional Indonesian coffee business dataset created to demonstrate an end-to-end SQL Data Analytics workflow using PostgreSQL.
 
@@ -36,7 +36,7 @@ Every insight in this document is linked to a specific analysis in `03_Analysis.
 
 ---
 
-# 2. Dataset Overview
+## Dataset Overview
 
 | Dataset | Records | Description |
 |---|---:|---|
@@ -56,7 +56,7 @@ The analysis covers transactions from **January 2024 to October 2025**.
 
 ---
 
-# 3. Executive Summary
+## Executive Summary
 
 The SQL analysis identifies several important patterns across Jingga Kopi's cities, products, and customers.
 
@@ -70,11 +70,11 @@ When cumulative revenue is compared with estimated rental costs over the same **
 
 ---
 
-# 4. Business Insights
+# Business Insights
 
-## 4.1 City Market Size
+## 1. City Market Size
 
-**SQL Source: `03_Analysis.sql — Q1 & Q5`**
+**SQL Source: `03_Analysis.sql — Q1`**
 
 The analysis estimates the number of coffee consumers in each city using a 25% population assumption.
 
@@ -100,7 +100,7 @@ Market size should therefore be evaluated together with actual sales performance
 
 ---
 
-# 5. Quarter 4 2024 Sales Performance by City
+## 2. Quarter 4 2024 Sales Performance by City
 
 **SQL Source: `03_Analysis.sql — Q2`**
 
@@ -132,7 +132,7 @@ Investigate the factors behind Bandung's performance, including customer spendin
 
 ---
 
-# 6. Product Transaction Performance
+## 3. Product Transaction Performance
 
 **SQL Source: `03_Analysis.sql — Q3`**
 
@@ -164,7 +164,7 @@ Maintain strong availability of high-volume products and use them as potential e
 
 ---
 
-# 7. Average Revenue per Customer
+## 4. Average Revenue per Customer
 
 **SQL Source: `03_Analysis.sql — Q4`**
 
@@ -197,7 +197,7 @@ Prioritize customer retention, loyalty programs, and targeted offers in high-val
 
 ---
 
-# 8. Population vs. Estimated Coffee Consumers
+## 5. Population vs. Estimated Coffee Consumers
 
 **SQL Source: `03_Analysis.sql — Q5`**
 
@@ -217,7 +217,7 @@ This is demonstrated by the difference between Jakarta's large estimated market 
 
 ---
 
-# 9. Top 3 Products by City
+## 6. Top 3 Products by City
 
 **SQL Source: `03_Analysis.sql — Q6`**
 
@@ -244,7 +244,7 @@ Use the city-level product ranking to support:
 
 ---
 
-# 10. Unique Coffee Customers by City
+## 7. Unique Coffee Customers by City
 
 **SQL Source: `03_Analysis.sql — Q7`**
 
@@ -282,7 +282,7 @@ Focus on increasing customer value through:
 
 ---
 
-# 11. Revenue vs. Estimated Rent
+## 8. Revenue vs. Estimated Rent
 
 **SQL Source: `03_Analysis.sql — Q8`**
 
@@ -327,7 +327,7 @@ However, this ratio should **not be interpreted as profitability**, because the 
 The estimated rent is also an assumed monthly cost and should therefore be treated as a **screening indicator rather than an actual financial performance measure**.
 
 ---
-# 12. Month-over-Month Revenue Growth
+## 9. Month-over-Month Revenue Changes
 
 **SQL Source: `03_Analysis.sql — Q9`**
 
@@ -380,7 +380,7 @@ The business should distinguish between **temporary revenue spikes and sustainab
 
 ---
 
-# 13. Top Cities by Revenue
+## 10. Top Cities by Revenue
 
 **SQL Source: `03_Analysis.sql — Q10`**
 
@@ -412,11 +412,11 @@ Use these three cities as priority markets for deeper business evaluation, while
 
 ---
 
-# 14. Cross-Analysis: What the SQL Results Tell Us
+# Cross-Analysis: What the SQL Results Tell Us
 
 The individual queries become more valuable when their results are interpreted together.
 
-### Bandung
+## Bandung
 
 From **Q2, Q4, Q8, and Q10**:
 
@@ -429,7 +429,7 @@ From **Q2, Q4, Q8, and Q10**:
 
 ---
 
-### Jakarta
+## Jakarta
 
 From **Q1, Q4, Q8, and Q10**:
 
@@ -442,7 +442,7 @@ From **Q1, Q4, Q8, and Q10**:
 
 ---
 
-### Yogyakarta
+## Yogyakarta
 
 From **Q4, Q7, and Q8**:
 
@@ -454,7 +454,7 @@ From **Q4, Q7, and Q8**:
 
 ---
 
-### Medan
+## Medan
 
 From **Q4 and Q7**:
 
@@ -465,11 +465,11 @@ From **Q4 and Q7**:
 
 ---
 
-# 15. Business Recommendations
+# Business Recommendations
 
 Based directly on the results of `03_Analysis.sql`, the following actions are recommended:
 
-### 1. Strengthen Bandung
+## 1. Strengthen Bandung
 
 **Evidence:** Q2, Q4, Q8, Q10
 
@@ -479,7 +479,7 @@ Bandung consistently performs strongly across revenue, customer value, and reven
 
 ---
 
-### 2. Evaluate Yogyakarta for Further Expansion
+## 2. Evaluate Yogyakarta for Further Expansion
 
 **Evidence:** Q4, Q7, Q8
 
@@ -489,7 +489,7 @@ Yogyakarta combines a relatively large observed coffee-product customer base wit
 
 ---
 
-### 3. Maintain Jakarta as a Strategic Market
+## 3. Maintain Jakarta as a Strategic Market
 
 **Evidence:** Q1, Q4, Q8, Q10
 
@@ -499,7 +499,7 @@ Jakarta has the largest estimated market size and strong revenue per customer, b
 
 ---
 
-### 4. Increase Customer Value in Yogyakarta and Medan
+## 4. Increase Customer Value in Yogyakarta and Medan
 
 **Evidence:** Q4, Q7
 
@@ -509,7 +509,7 @@ Both cities have relatively large observed customer bases but lower average reve
 
 ---
 
-### 5. Protect High-Volume Products
+## 5. Protect High-Volume Products
 
 **Evidence:** Q3 and Q6
 
@@ -519,7 +519,7 @@ Americano, Espresso, Kopi Susu, and Kopi Susu Gula Aren are among the strongest 
 
 ---
 
-### 6. Investigate Revenue Spikes
+## 6. Investigate Revenue Spikes
 
 **Evidence:** Q9
 
@@ -529,7 +529,7 @@ September 2024 shows unusually high month-over-month growth across multiple citi
 
 ---
 
-# 16. Analytical Limitations
+## Analytical Limitations
 
 This project uses a **dummy dataset**, so the findings demonstrate an analytical methodology rather than actual Jingga Kopi business performance.
 
@@ -546,7 +546,7 @@ Important limitations:
 
 ---
 
-# 17. Conclusion
+## Conclusion
 
 The SQL analysis demonstrates an end-to-end Data Analyst workflow:
 

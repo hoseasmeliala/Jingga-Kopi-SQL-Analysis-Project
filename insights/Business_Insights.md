@@ -51,7 +51,7 @@ The analysis covers transactions from **January 2024 to October 2025**.
 
 - Estimated coffee consumers are calculated using **25% of city population**.
 - Estimated rent is a **dummy business-cost assumption** for analytical purposes.
-- Product IDs **1–14** are treated as coffee products in the customer analysis.
+- Coffee products are identified using the " product_category = 'Coffee' " classification in the products table.
 - Revenue-to-rent ratio is used as a **screening indicator**, not as a profitability metric.
 
 ---
@@ -538,7 +538,7 @@ Important limitations:
 1. The estimated coffee-consumer market is based on a fixed 25% population assumption and therefore represents a theoretical addressable-market proxy, not observed customers.
 2. Estimated rent is a dummy assumption and does not represent verified Indonesian commercial rental prices.
 3. Revenue-to-rent ratio is a screening indicator and is not a profitability metric because other operating costs are excluded.
-4. Product IDs 1–14 are classified as coffee products based on the current dataset structure; this classification would be more robust if a product category field were used directly.
+4. Coffee products are identified using the product category field in the current dataset. The classification depends on the consistency of product-category data.
 5. The analysis does not include operating costs such as ingredients, labor, utilities, marketing, taxes, or logistics.
 6. September 2024 contains an unusually large revenue increase that requires further investigation and should not automatically be interpreted as sustainable growth.
 7. October 2025 is an incomplete month in the dataset and should not be directly compared with complete months.

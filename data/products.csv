@@ -1,0 +1,29 @@
+product_id;product_name;product_category;price
+1;Espresso;Coffee;18000
+2;Americano;Coffee;20000
+3;Kopi Susu;Coffee;22000
+4;Kopi Susu Gula Aren;Coffee;24000
+5;Cappuccino;Coffee;27000
+6;Cafe Latte;Coffee;27000
+7;Caramel Latte;Coffee;29000
+8;Hazelnut Latte;Coffee;30000
+9;Mocha;Coffee;30000
+10;Vanilla Latte;Coffee;29000
+11;Cold Brew;Coffee;25000
+12;Iced Americano;Coffee;22000
+13;Iced Coffee Latte;Coffee;25000
+14;Iced Caramel Coffee;Coffee;28000
+15;Affogato;Coffee;30000
+16;Matcha Latte;Non-Coffee;28000
+17;Chocolate Latte;Non-Coffee;27000
+18;Thai Tea;Non-Coffee;22000
+19;Lemon Tea;Non-Coffee;18000
+20;Peach Tea;Non-Coffee;22000
+21;Coffee Beans 250g;Coffee Beans;65000
+22;Coffee Beans 500g;Coffee Beans;110000
+23;Ground Coffee 250g;Coffee Beans;55000
+24;Cold Brew Bottle;Bottled Coffee;25000
+25;Coffee Drip Bags 10pcs;Coffee Accessories;75000
+26;French Press;Coffee Accessories;175000
+27;Coffee Gift Hamper;Gift & Bundle;250000
+28;Coffee Subscription;Subscription;200000

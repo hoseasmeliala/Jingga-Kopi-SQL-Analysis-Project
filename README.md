@@ -199,7 +199,6 @@ The project demonstrates:
 - `SELECT`
 - `WHERE`
 - `GROUP BY`
-- `HAVING`
 - `ORDER BY`
 - `INNER JOIN`
 - `LEFT JOIN`
@@ -208,7 +207,6 @@ The project demonstrates:
 - `SUM()`
 - `ROUND()`
 - `EXTRACT()`
-- `CASE`
 - Common Table Expressions (`CTE`)
 - Window Functions
 - `DENSE_RANK()`
@@ -217,7 +215,6 @@ The project demonstrates:
 - Date-based analysis
 - Data validation
 - Referential integrity checks
-
 ---
 
 ## 🔄 Project Workflow
@@ -613,22 +610,25 @@ Jingga-Kopi-SQL-Analysis-Project/
     └── q10_city_revenue_ranking.png
 
 ```
-
 ### File Description
 
 | File | Purpose |
 |---|---|
-| `README.md` | Project documentation and portfolio overview |
-| `city.csv` | City-level dataset |
-| `customers.csv` | Customer dataset |
-| `products.csv` | Product dataset |
-| `sales.csv` | Transaction dataset |
-| `01_Database_Schema.sql` | Database and table structure |
-| `01.1_Table_Mapping.pgerd` | Table relation preview |
-| `02_Data_Validation.sql` | Data quality and consistency checks |
-| `03_Analysis.sql` | Business questions and SQL analysis |
-| `Business_Insights.md` | Findings, interpretation, and recommendations |
-
+| `README.md` | Project documentation, methodology, and portfolio overview |
+| `data/city.csv` | City-level data including population and estimated rental cost |
+| `data/customers.csv` | Customer information and city relationship |
+| `data/products.csv` | Product information and pricing |
+| `data/sales.csv` | Sales transaction records |
+| `sql/01_Database_Schema.sql` | Database and table structure with primary and foreign keys |
+| `sql/02_Data_Validation.sql` | Data quality, consistency, and referential integrity checks |
+| `sql/03_Analysis.sql` | Business questions and SQL-based analysis |
+| `insights/Business_Insights.md` | Key findings, business interpretation, and recommendations |
+| `visuals/data_model.png` | Database relationship visualization |
+| `visuals/q3_product_performance.png` | Product transaction performance visualization |
+| `visuals/q6_top_products_by_city.png` | Top product performance by city |
+| `visuals/q8_revenue_vs_rent.png` | Revenue-to-rent comparison by city |
+| `visuals/q9_monthly_revenue_growth.png` | Monthly revenue growth analysis |
+| `visuals/q10_city_revenue_ranking.png` | City revenue ranking visualization |
 ---
 
 ## 🚀 Possible Future Improvements
